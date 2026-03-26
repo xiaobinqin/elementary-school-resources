@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第5单元 三角形 · 四年级数学下册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第5单元 三角形</h1>
+  <div class="sub">四年级 · 数学 · 下册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">四年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">下册</a><span>›</span>
+  第5单元 三角形
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>认识三角形：由三条线段围成的封闭图形，有三条边、三个角、三个顶点</p></div><div class="kp-card"><div class="num">知识点 2</div><p>三角形的内角和=180°（任何三角形）</p></div><div class="kp-card"><div class="num">知识点 3</div><p>三角形的分类：按角分（锐角/直角/钝角三角形），按边分（等边/等腰/普通三角形）</p></div><div class="kp-card"><div class="num">知识点 4</div><p>三角形三边关系：任意两边之和大于第三边（三角形成立的条件）</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>三角形内角和定理的应用：已知两个角求第三个角</li><li>判断三边能否构成三角形：最短两边之和必须大于最长边</li><li>等腰三角形的识别：两腰相等，顶角在两腰之间</li><li>三角形的稳定性：三角形形状固定，四边形可以变形（应用）</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">三角形内角和=（　）度，如果两个角分别是65°和80°，第三个角是（　）度</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">180°；35°</div>
+  <div class="analysis">📝 解析：第三角=180°-65°-80°=35°</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">判断能否构成三角形：①3,4,5 ②2,3,6 ③5,5,5</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">①能②不能③能（等边三角形）</div>
+  <div class="analysis">📝 解析：①3+4=7>5✓；②2+3=5<6✗（不能）；③5+5=10>5✓</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">等边三角形每个角是多少度？等腰三角形顶角是100°，底角是多少度？</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">60°；底角40°</div>
+  <div class="analysis">📝 解析：等边：180°÷3=60°；等腰底角=(180°-100°)÷2=40°</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">一个直角三角形，有一个角是55°，另外两个角分别是多少度？</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">35°和90°</div>
+  <div class="analysis">📝 解析：已有一个90°和55°，第三角=180°-90°-55°=35°</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">判断三角形类型：①三个角都小于90° ②有一个90°角 ③有一个120°角</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">①锐角三角形②直角三角形③钝角三角形</div>
+  <div class="analysis">📝 解析：按最大角分类</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">三角形的一条边上的高是从对边的（　）到这条边所在直线的（　）线段</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">对边的对面顶点；垂</div>
+  <div class="analysis">📝 解析：高是从顶点到对边的垂线段</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">等腰三角形腰长8cm，底边4cm，周长是多少？如果底角是50°，顶角是多少度？</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">周长20cm；顶角80°</div>
+  <div class="analysis">📝 解析：周长=8+8+4=20cm；顶角=180°-50°×2=80°</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">一个三角形可以有几个钝角？几个直角？</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">最多1个钝角；最多1个直角（三角形内角和180°）</div>
+  <div class="analysis">📝 解析：若有2个直角=180°，第三个角=0°，不构成三角形；一个三角形最多只有一个钝角或直角</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">直角三角形中，两个锐角的关系是什么？如果其中一个锐角是35°，另一个是多少度？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">两个锐角互补（和为90°）；另一个=55°</div>
+  <div class="analysis">📝 解析：直角三角形：90°+锐角1+锐角2=180°，所以锐角1+锐角2=90°；35°+锐角2=90°，锐角2=55°</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">用4根小棒（长度3cm,3cm,4cm,4cm）能拼成哪几种三角形？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">不能（4根棒只能围四边形）；若取3根：3,3,4能构成等腰三角形（3+3=6>4✓）；3,4,4也能（3+4=7>4✓）</div>
+  <div class="analysis">📝 解析：4根棒围三角形？三角形只需3条边，从4根选3根：(3,3,4)或(3,4,4)，都能构成三角形</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">一个三角形，如果将其中一个内角增大10°，其余两个内角应该如何变化，才能保持三角形内角和不变？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">其余两个角共减小10°（如各减5°，或一个减10°，另一个不变等）</div>
+  <div class="analysis">📝 解析：三角形内角和恒为180°，一个角增大Δ，其余两个角之和必须减小Δ</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">剪纸游戏：将一个等边三角形（边长12cm）从各边中点剪开，得到几个小三角形？每个小三角形是等边三角形吗？边长多少？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">4个等边三角形，边长6cm</div>
+  <div class="analysis">📝 解析：连接各边中点将等边三角形分成4个全等的小等边三角形，边长=原来的一半=6cm</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【思维题】一个等腰三角形，顶角是底角的2倍，求三个角分别是多少度？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">顶角80°，底角各50°</div>
+  <div class="analysis">📝 解析：设底角为x，顶角=2x；x+x+2x=180°；4x=180°；x=45°。顶角=90°，底角45°。等等：等腰三角形有两个相等的底角。设底角=x，顶角=2x；2x+x+x=180°（两个底角+顶角）；4x=180°；x=45°；顶角=90°，底角=45°</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>

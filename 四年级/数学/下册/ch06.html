@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第6单元 小数的加法和减法 · 四年级数学下册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第6单元 小数的加法和减法</h1>
+  <div class="sub">四年级 · 数学 · 下册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">四年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">下册</a><span>›</span>
+  第6单元 小数的加法和减法
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>掌握小数加减法的计算方法：小数点对齐，相同数位相加减</p></div><div class="kp-card"><div class="num">知识点 2</div><p>计算结果中末尾出现0时，要根据情况化简（去掉末尾0）</p></div><div class="kp-card"><div class="num">知识点 3</div><p>能用小数加减法解决实际生活中的问题（购物、测量等）</p></div><div class="kp-card"><div class="num">知识点 4</div><p>掌握小数加减法的验算方法</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>位数不同的小数相加减时，要补齐位数再计算（用0填充空位）</li><li>进位和借位的处理（与整数相同，但要注意小数点位置）</li><li>计算结果整数部分为0时的写法（如0.9+0.5=1.4，不要写成.14）</li><li>实际应用中单位换算结合小数计算</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">计算：3.45+2.8=（　）；7.2-4.56=（　）</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6.25；2.64</div>
+  <div class="analysis">📝 解析：3.45+2.80=6.25（补0对齐）；7.20-4.56=2.64（补0对齐）</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">计算：12.5+8.75+1.25</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">22.5</div>
+  <div class="analysis">📝 解析：12.5+8.75=21.25；21.25+1.25=22.5（或发现8.75+1.25=10，12.5+10=22.5）</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">计算：5-3.46</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">1.54</div>
+  <div class="analysis">📝 解析：5.00-3.46=1.54（整数补小数位）</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">小明买了一本书12.5元，一支钢笔8.8元，一个本子3.6元，共花了多少钱？如果付了30元，找回多少？</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">共24.9元；找回5.1元</div>
+  <div class="analysis">📝 解析：12.5+8.8+3.6=24.9元；30-24.9=5.1元</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">估算：4.87+3.19≈（　）；9.03-5.98≈（　）</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">约8；约3</div>
+  <div class="analysis">📝 解析：4.87≈5，3.19≈3，约8；9.03≈9，5.98≈6，约3</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">水果店称量苹果：第一袋2.35千克，第二袋1.8千克，第三袋1.95千克，三袋共多少千克？</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6.1千克</div>
+  <div class="analysis">📝 解析：2.35+1.80+1.95=6.10=6.1千克</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">一根绳子长8.5米，剪去3.76米，还剩多少米？再折半，每段多少米？</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">剩4.74米；折半2.37米</div>
+  <div class="analysis">📝 解析：8.5-3.76=4.74米；4.74÷2=2.37米</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">计算并验算：6.34+4.78</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">11.12；验算：11.12-4.78=6.34✓</div>
+  <div class="analysis">📝 解析：6.34+4.78=11.12；验算用减法</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">小明身高1.32米，小红身高1.47米，小华比他们两人平均身高高0.05米，小华多高？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">1.445米</div>
+  <div class="analysis">📝 解析：平均=(1.32+1.47)÷2=2.79÷2=1.395米；小华=1.395+0.05=1.445米</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">一辆汽车上午行驶了63.5千米，下午行驶了78.8千米，全天行驶多少千米？如果油箱剩余燃油还能行驶48.7千米，加满后能行驶145千米，需要加多少千米量的油？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">全天142.3千米；需加96.3千米量的油</div>
+  <div class="analysis">📝 解析：全天：63.5+78.8=142.3千米；加油：145-48.7=96.3千米量</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">排列计算（用简便方法）：5.8+4.3+0.7+5.2<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">16</div>
+  <div class="analysis">📝 解析：5.8+0.2（从4.3取）=6；4.1（剩）+5.9（从5.2取）=10；0.1（剩）+...实际：5.8+4.3+0.7+5.2=(5.8+0.2)+(4.3-0.2+0.7+0.2)...用结合律：(5.8+0.7)+(4.3+5.2)=6.5+9.5=16</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">一瓶饮料重0.8千克，箱子本身重1.25千克，一箱装12瓶，整箱重多少千克？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">10.85千克</div>
+  <div class="analysis">📝 解析：12瓶=0.8×12=9.6千克；整箱=9.6+1.25=10.85千克</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【思维题】用1.5、0.5、3、0.25四个数，每个用一次，加减法组合，得到结果最大是多少？最小是多少？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">最大：3+1.5+0.5+0.25=5.25；最小：0.25-1.5-0.5+...=0.25+0.5-1.5-3=-3.75</div>
+  <div class="analysis">📝 解析：最大=全部加：3+1.5+0.5+0.25=5.25；最小=大数相减：0.25+0.5-1.5-3=-3.75</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>

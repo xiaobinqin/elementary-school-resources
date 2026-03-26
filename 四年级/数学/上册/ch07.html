@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第7单元 条形统计图 · 四年级数学上册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第7单元 条形统计图</h1>
+  <div class="sub">四年级 · 数学 · 上册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">四年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">上册</a><span>›</span>
+  第7单元 条形统计图
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>认识条形统计图：用长短不等的条形表示数量多少</p></div><div class="kp-card"><div class="num">知识点 2</div><p>能读懂条形统计图：看横轴（类别）和纵轴（数量），读取条形高度对应的数值</p></div><div class="kp-card"><div class="num">知识点 3</div><p>能根据数据制作条形统计图（确定纵轴刻度、画条形、标注）</p></div><div class="kp-card"><div class="num">知识点 4</div><p>能根据条形统计图进行简单的数据分析和对比</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>纵轴刻度的确定：根据最大数据确定每格代表的数量（使图形美观合理）</li><li>读取近似值：当数据不恰好在刻度线上时，需要估读</li><li>从图中发现数据的变化趋势和规律</li><li>比较复式条形统计图中多组数据（如对比两班成绩）</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">某学校四年级各班人数：一班45人，二班42人，三班48人，四班43人。画出条形统计图（描述如何设置纵轴）</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">纵轴每格5人，最高到50，各班画相应高度的条形</div>
+  <div class="analysis">📝 解析：最大数48，纵轴最高50，每格可以是5或10</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">从条形统计图读取：如果最高的条形高度代表48人，最矮的代表42人，相差多少人？</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6人</div>
+  <div class="analysis">📝 解析：48-42=6人</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">统计图显示某班同学最喜欢的科目：语文15，数学22，英语18，体育20，美术10。哪科最受欢迎？哪科最不受欢迎？总人数多少？</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">数学最受欢迎；美术最不受欢迎；总85人</div>
+  <div class="analysis">📝 解析：最高22=数学；最低10=美术；总15+22+18+20+10=85</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">根据数据制作条形图并分析趋势：月降雨量（毫米）：1月10，2月15，3月20，4月35，5月60，6月80。哪个月降雨最多？有何趋势？</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6月最多；降雨量逐月增加，有增长趋势</div>
+  <div class="analysis">📝 解析：从1月到6月数据逐渐增大，呈增长趋势</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">两个班数学成绩对比（复式条形图）：优秀：甲班30，乙班25；良好：甲班15，乙班20；及格：甲班5，乙班5。哪班成绩更好？</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">甲班（优秀更多：30>25）</div>
+  <div class="analysis">📝 解析：甲班优秀人数更多，总体成绩较好</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">判断：①条形越长表示数量越多（　）②所有统计图纵轴都从0开始（　）③条形统计图可以清楚看出数量多少，也可以看出变化趋势（　）</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">①对②对③对（基本对，折线图更适合看趋势）</div>
+  <div class="analysis">📝 解析：条形图主要用于比较数量多少，折线图更适合趋势</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">某次调查，40名学生喜欢的体育项目：篮球16人，足球12人，乒乓球8人，其他4人。用条形统计图表示时，纵轴每格代表2人，各条形分别画几格？</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">篮球8格，足球6格，乒乓球4格，其他2格</div>
+  <div class="analysis">📝 解析：÷2：16÷2=8格，12÷2=6格，8÷2=4格，4÷2=2格</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">从统计图分析：某店一周销售量（件）：一50，二45，三60，四55，五80，六100，日90。销售最旺的是哪天？工作日平均每天销量多少件？</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">星期六最旺；工作日平均：(50+45+60+55+80)÷5=58件</div>
+  <div class="analysis">📝 解析：工作日（一到五）：50+45+60+55+80=290，÷5=58件/天</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">某班期末各科平均分：语文86，数学92，英语88，科学79，体育95。请分析：哪科需要加强？如果下学期每科都要提升5分，各科目标是多少？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">科学最低需加强；目标：语文91，数学97，英语93，科学84，体育100</div>
+  <div class="analysis">📝 解析：科学79分最低；各科+5，体育100为满分</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">两家超市一周蔬菜销量（吨）：甲：一3.5，二4.0，三4.5，四3.8，五5.0，六7.5，日6.0；乙：一4.0，二3.5，三5.0，四4.2，五4.8，六6.0，日7.0。一周内哪家总销量更多？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">甲：3.5+4+4.5+3.8+5+7.5+6=34.3吨；乙：4+3.5+5+4.2+4.8+6+7=34.5吨，乙略多</div>
+  <div class="analysis">📝 解析：分别求和比较</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">根据条形统计图，四年级各班图书角藏书量（册）：一班120，二班150，三班135，四班145，五班160。全年级平均每班多少册？如果要让每班都达到150册，需要为哪些班补充多少册？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">平均142册；一班补30，三班补15，四班补5</div>
+  <div class="analysis">📝 解析：平均：(120+150+135+145+160)÷5=710÷5=142；差150：一班30，二班0，三班15，四班5，五班0</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">某年级400米跑步比赛成绩（秒）：1名87，2名89，3名92，4名95，5名98，6名101。用条形统计图呈现时，每格代表5秒，纵轴从80开始，第1名对应几格？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">第1名对应：(87-80)÷5=1.4格（非整格，实际取最接近的刻度线）</div>
+  <div class="analysis">📝 解析：如果纵轴从80开始，87在第1.4格处，可能纵轴设计需要每格2秒更合适</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【综合分析】某班体育测试达标情况：男生25人，全部达标；女生20人，其中18人达标。全班达标率是多少？用统计图怎么表示男女生达标对比？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">全班达标率：43/45≈95.6%；用复式条形图：横轴男/女，纵轴人数，每组两个条形（达标/不达标）</div>
+  <div class="analysis">📝 解析：男25达标，女18达标，共43人达标；总45人；达标率43/45=95.6%</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>

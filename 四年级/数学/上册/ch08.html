@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第8单元 数学广角——优化 · 四年级数学上册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第8单元 数学广角——优化</h1>
+  <div class="sub">四年级 · 数学 · 上册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">四年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">上册</a><span>›</span>
+  第8单元 数学广角——优化
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>通过统筹方法解决实际问题：合理安排工序，减少总时间</p></div><div class="kp-card"><div class="num">知识点 2</div><p>理解优化的思想：在有限条件下寻找最优方案</p></div><div class="kp-card"><div class="num">知识点 3</div><p>能用图示或表格分析多任务合理安排</p></div><div class="kp-card"><div class="num">知识点 4</div><p>掌握简单的排列组合思想（有序思考）</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>分清哪些任务可以并行（同时进行），哪些必须顺序（前一个完成才能开始）</li><li>找出最优方案，说明为什么是最优</li><li>排列组合中不重复不遗漏地列出所有情况</li><li>用数学方法计算最少需要的时间</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">烧水需要10分钟，泡茶需要3分钟（水烧好才能泡），洗茶杯需要2分钟。如何安排才能最快喝上茶？最少需要多少分钟？</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">先烧水，同时洗茶杯；水开后泡茶。总时间=10+3=13分钟（洗杯与烧水同时进行）</div>
+  <div class="analysis">📝 解析：洗杯2分钟可以在烧水的10分钟内完成，不需要额外时间；最少时间=10+3=13分钟</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">妈妈要做以下事情：煮饭40分钟，炒菜10分钟（要等饭煮好），切菜5分钟，摆碗筷3分钟。最快多少分钟能开饭？</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">43分钟</div>
+  <div class="analysis">📝 解析：煮饭同时切菜(5分钟)和摆碗筷(3分钟)，这些都能并行；煮饭40分钟后炒菜10分钟=50分钟太长。实际：煮饭+炒菜=40+10=50分钟是关键路径；切菜和摆碗可以在此期间完成。所以最快=40+10=50？但切菜要在炒菜前完成，炒菜前切菜5分钟+炒菜10分钟也在煮饭期间进行，所以总时间=40+10=50分钟，不对，切菜可以在煮饭期间做，然后煮饭好了立即炒菜10分钟。总=40+10=50分钟，但煮饭时切菜，所以切菜不单独占时间</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">从A、B、C三道菜中任选2道，有多少种不同的选法？</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">3种（AB, AC, BC）</div>
+  <div class="analysis">📝 解析：从3选2：AB、AC、BC，共3种</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">1、2、3三个数字各用一次，能组成多少个不同的三位数？</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6个（123,132,213,231,312,321）</div>
+  <div class="analysis">📝 解析：3×2×1=6种</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">一个人要过河，船只能坐2人（含船夫），共有4名游客和1名船夫，至少需要渡几次？</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">4次（或来回算，4次到对岸）</div>
+  <div class="analysis">📝 解析：每次载1名游客，来回1次送1人需2趟，4名游客需4次×2=8趟（来回），但最后一次不用回来：4次到对岸=7趟</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">小明做题：语文20分钟，数学30分钟，英语25分钟，中间休息5分钟。如何安排顺序让总时间最短？（每门功课各做一次，不能同时做）</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">时间固定=20+30+25+3×5=90分钟（顺序不影响总时间，除非休息可优化）</div>
+  <div class="analysis">📝 解析：因为不能同时做功课，所以总做题时间固定=75分钟，加上2次（中间）休息=75+10=85分钟，顺序不影响总时间</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">3枚硬币同时抛出，正反面可能出现多少种不同组合？</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">8种（正正正，正正反，正反正，反正正，正反反，反正反，反反正，反反反）</div>
+  <div class="analysis">📝 解析：2×2×2=8种</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">在一次比赛中，4支球队互相比赛一次（循环赛），共需要比几场？</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">6场</div>
+  <div class="analysis">📝 解析：C(4,2)=4×3÷2=6场</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">做一顿饭需要以下步骤：淘米5分钟→煮饭40分钟→切菜10分钟→炒菜15分钟（切菜和煮饭不能同时进行，必须切完才能炒）→上桌2分钟。能否将某些步骤合并节省时间？最少需要多少分钟？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">最少62分钟</div>
+  <div class="analysis">📝 解析：关键路径：淘米5+煮饭40=45分钟煮好饭；同时间可以切菜10分钟（在煮饭期间做）；煮饭结束后炒菜15+上桌2=17分钟；总=45+17=62分钟（切菜在煮饭期间完成，不占额外时间）</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">用0、1、2、3四个数字，每个只用一次，能组成多少个四位偶数？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">10个</div>
+  <div class="analysis">📝 解析：末位必须是偶数(0或2)。末位0：前三位用1,2,3全排列=6个；末位2：首位不能是0，首位选1或3（2种），其余两位全排列=2×2=4个；共10个</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">5人比赛握手，每两人握一次，共握几次手？如果是10人呢？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">5人：10次；10人：45次</div>
+  <div class="analysis">📝 解析：C(5,2)=10；C(10,2)=45</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">工厂有3台机器，每台完成一件产品需要的时间分别是：A机器12分钟，B机器15分钟，C机器10分钟。如果要完成9件产品（每台各做3件），最快多少分钟？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">45分钟（最慢的B机器3×15=45分钟决定）</div>
+  <div class="analysis">📝 解析：A：3×12=36分钟；B：3×15=45分钟；C：3×10=30分钟；最慢的B机器决定总时间，45分钟</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【思维题】将一个大任务分成若干小任务，某项目有5个任务（A,B,C,D,E），其中B依赖A完成，D依赖C完成，E依赖B和D都完成。时间：A=3天，B=4天，C=5天，D=2天，E=6天。关键路径是什么？最短完成时间？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">关键路径C→D→E=5+2+6=13天；A→B=3+4=7天；总=13天</div>
+  <div class="analysis">📝 解析：两条路径：A→B→E=3+4+6=13天；C→D→E=5+2+6=13天；E依赖B和D，要等两条路径都完成，最短时间=max(7,7)+6=13天</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>

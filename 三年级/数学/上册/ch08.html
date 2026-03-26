@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第8单元 分数的初步认识 · 三年级数学上册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第8单元 分数的初步认识</h1>
+  <div class="sub">三年级 · 数学 · 上册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">三年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">上册</a><span>›</span>
+  第8单元 分数的初步认识
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>理解分数的意义：把一个整体平均分成若干份，其中的一份或几份用分数表示</p></div><div class="kp-card"><div class="num">知识点 2</div><p>认识分数各部分名称：分子、分母、分数线，正确读写分数</p></div><div class="kp-card"><div class="num">知识点 3</div><p>比较分数大小：同分母分数比分子，同分子分数比分母（分母越大，分数越小）</p></div><div class="kp-card"><div class="num">知识点 4</div><p>掌握同分母分数的简单加减法：分母不变，分子相加减</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>理解分数的本质：必须是平均分（等份）才能用分数表示</li><li>同分子分数的大小比较：分母越大反而分数越小（与整数逻辑相反）</li><li>分数加减法不改变分母，只算分子，学生易错将分母也加减</li><li>用分数表示生活中的数量（如一半写作1/2，一段路的1/3等）</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">把一个苹果平均分成4份，每份是这个苹果的几分之几？3份呢？</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">1/4；3/4</div>
+  <div class="analysis">📝 解析：平均分成4份，1份是1/4，3份是3/4</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">写出下面分数并读出：把8平均分成8份，取其中3份</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">3/8，读作：八分之三</div>
+  <div class="analysis">📝 解析：分母是8（分的份数），分子是3（取的份数）</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">比较大小：3/7○5/7；1/3○1/4</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">3/7＜5/7；1/3＞1/4</div>
+  <div class="analysis">📝 解析：同分母比分子：3＜5；同分子比分母：分母3＜4，所以1/3＞1/4（分母越大，每份越小）</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">计算：3/8+4/8=（　）；7/9-3/9=（　）</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">7/8；4/9</div>
+  <div class="analysis">📝 解析：分母不变，分子相加减：3+4=7，7/8；7-3=4，4/9</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">一块蛋糕平均切成6块，小明吃了2块，小红吃了1块，两人共吃了几分之几？还剩几分之几？</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">共吃3/6=1/2；还剩3/6=1/2</div>
+  <div class="analysis">📝 解析：2/6+1/6=3/6=1/2；剩余6/6-3/6=3/6=1/2</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">在数轴（0到1之间）上标出1/4，2/4，3/4的位置</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">把0到1等分4份，依次标出</div>
+  <div class="analysis">📝 解析：将0到1分成4等份，第1个点是1/4，第2个是2/4（即1/2），第3个是3/4</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">下面哪些图形中阴影部分可以用1/3表示？（A：将圆等分3份，涂1份；B：将圆不等分3份，涂1份；C：将长方形等分3份，涂1份）</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">A和C可以，B不可以</div>
+  <div class="analysis">📝 解析：分数要求平均分（等分），B不是等分，所以不能用1/3表示</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">1/2+（　）=1；3/4-（　）=1/4</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">1/2；2/4（即1/2）</div>
+  <div class="analysis">📝 解析：1/2+□=1，□=1-1/2=2/2-1/2=1/2；3/4-□=1/4，□=3/4-1/4=2/4</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">把一根绳子平均分成5段，剪去2段后，还剩几分之几？剩余部分比剪去部分多几分之几？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">还剩3/5；多1/5</div>
+  <div class="analysis">📝 解析：剩余3/5，剪去2/5；差=3/5-2/5=1/5</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">把24个苹果平均分成4份，取其中3份是多少个？取其中的3/4是多少个？（两问答案是否相同？）<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">都是18个，相同</div>
+  <div class="analysis">📝 解析：每份24÷4=6个；3份=6×3=18个；3/4的24=24×3÷4=18个。两种说法表达同一件事</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">把一张正方形纸对折再对折，展开后被分成了几份？每份是整张纸的几分之几？折痕将纸分成了几个相等的部分？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">4份；每份1/4；4个相等部分</div>
+  <div class="analysis">📝 解析：对折一次=2份，再对折=4份，每份1/4</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">甲说：我吃了一块巧克力的1/3。乙说：我吃了一块巧克力的1/4。谁吃的更多？（两块巧克力大小相同吗？）在大小相同的前提下，谁吃的更多？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">大小相同时甲吃的更多（1/3＞1/4）</div>
+  <div class="analysis">📝 解析：同分子1，分母3＜4，所以1/3＞1/4，甲吃的更多</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【思维题】有一条路，第一天走了全程的1/4，第二天走了全程的2/4，两天共走了全程的几分之几？还剩几分之几没走？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">共走3/4；还剩1/4</div>
+  <div class="analysis">📝 解析：1/4+2/4=3/4；剩余=1-3/4=4/4-3/4=1/4</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>

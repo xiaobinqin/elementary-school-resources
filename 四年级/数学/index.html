@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>四年级数学</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}
+
+
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+
+
+</style>
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>四年级数学</h1>
+  <div class="sub">人教版 · 上下册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../main.html">🏠 首页</a><span style="margin:0 6px;color:#888">›</span>
+  <a href="../index.html">四年级</a><span style="margin:0 6px;color:#888">›</span>
+  数学
+</div>
+<div class="container">
+  <div style="display:flex;gap:20px;flex-wrap:wrap;">
+    <a href="上册/index.html" style="display:block;background:#fff;border-radius:16px;padding:22px;flex:1;min-width:200px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:all .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+  <div style="font-size:22px;font-weight:800;color:var(--subj-color);margin-bottom:12px;">🔢 上册</div>
+  <div style="font-size:12px;color:#888;margin-bottom:10px;">共 8 章节</div>
+  <div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第1单元 大数的认识</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第2单元 公顷和平方千米</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第3单元 角的度量</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第4单元 三位数乘两位数</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第5单元 平行四边形和梯形</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第6单元 除数是两位数的除法</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第7单元 条形统计图</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第8单元 数学广角——优化</div>
+  <div style="margin-top:12px;background:var(--subj-color);color:#fff;border-radius:8px;padding:8px;text-align:center;font-size:13px;font-weight:600;">进入学习 →</div>
+</a><a href="下册/index.html" style="display:block;background:#fff;border-radius:16px;padding:22px;flex:1;min-width:200px;text-decoration:none;box-shadow:0 4px 15px rgba(0,0,0,0.08);transition:all .2s;" onmouseover="this.style.transform='translateY(-4px)'" onmouseout="this.style.transform=''">
+  <div style="font-size:22px;font-weight:800;color:var(--subj-color);margin-bottom:12px;">🔢 下册</div>
+  <div style="font-size:12px;color:#888;margin-bottom:10px;">共 9 章节</div>
+  <div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第1单元 四则运算</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第2单元 观察物体（二）</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第3单元 运算定律</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第4单元 小数的意义和性质</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第5单元 三角形</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第6单元 小数的加法和减法</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第7单元 图形的运动（二）</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第8单元 平均数与条形统计图</div><div style="font-size:13px;color:#555;padding:4px 0;border-bottom:1px dashed #eee;">第9单元 数学广角——鸡兔同笼</div>
+  <div style="margin-top:12px;background:var(--subj-color);color:#fff;border-radius:8px;padding:8px;text-align:center;font-size:13px;font-weight:600;">进入学习 →</div>
+</a>
+  </div>
+</div>
+</body></html>

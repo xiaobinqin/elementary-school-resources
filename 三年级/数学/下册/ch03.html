@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1.0">
+<title>第3单元 复式统计表 · 三年级数学下册</title>
+<style>:root{--subj-color:#E74C3C;--subj-light:#FDECEA;}</style>
+
+<style>
+*{box-sizing:border-box;margin:0;padding:0;}
+body{font-family:'PingFang SC','微软雅黑',Arial,sans-serif;background:#F0F4F8;min-height:100vh;color:#2D3436;}
+.header{background:var(--subj-color);color:#fff;padding:25px 20px;text-align:center;position:relative;overflow:hidden;}
+.header::before{content:'';position:absolute;top:-50%;left:-50%;width:200%;height:200%;background:radial-gradient(circle,rgba(255,255,255,0.1) 0%,transparent 60%);}
+.header .icon{font-size:50px;display:block;margin-bottom:8px;}
+.header h1{font-size:26px;font-weight:800;text-shadow:0 2px 4px rgba(0,0,0,0.2);}
+.header .sub{font-size:14px;opacity:0.9;margin-top:5px;}
+.breadcrumb{background:#fff;padding:12px 20px;margin:15px;border-radius:12px;box-shadow:0 2px 8px rgba(0,0,0,0.06);font-size:13px;}
+.breadcrumb a{color:var(--subj-color);text-decoration:none;font-weight:500;}
+.breadcrumb a:hover{text-decoration:underline;}
+.breadcrumb span{color:#888;margin:0 6px;}
+.container{max-width:860px;margin:0 auto;padding:0 15px 30px;}
+.section{background:#fff;border-radius:16px;padding:25px;margin-bottom:18px;box-shadow:0 4px 12px rgba(0,0,0,0.07);}
+.section-title{font-size:20px;font-weight:700;margin-bottom:18px;padding-bottom:12px;border-bottom:3px solid var(--subj-color);display:flex;align-items:center;gap:8px;}
+.kp-grid{display:grid;grid-template-columns:repeat(auto-fill,minmax(230px,1fr));gap:14px;}
+.kp-card{background:var(--subj-light);border-left:5px solid var(--subj-color);border-radius:10px;padding:14px;}
+.kp-card .num{font-size:11px;font-weight:700;color:var(--subj-color);text-transform:uppercase;letter-spacing:1px;margin-bottom:6px;}
+.kp-card p{font-size:14px;line-height:1.7;color:#444;}
+.diff-list{list-style:none;}
+.diff-list li{padding:11px 15px 11px 42px;margin-bottom:9px;background:#FFF8F0;border-radius:10px;position:relative;font-size:14px;line-height:1.7;border-left:4px solid #F39C12;}
+.diff-list li::before{content:"⚠";position:absolute;left:14px;top:11px;color:#F39C12;font-size:16px;}
+.ex-item{background:#F8FAFF;border-radius:12px;padding:18px;margin-bottom:14px;border:1px solid #E0E8FF;}
+.ex-item.adv{background:#FFFBF0;border-color:#FFE4A0;}
+.ex-header{display:flex;align-items:flex-start;gap:10px;margin-bottom:0;}
+.ex-num{min-width:30px;height:30px;line-height:30px;text-align:center;border-radius:50%;background:var(--subj-color);color:#fff;font-weight:700;font-size:14px;flex-shrink:0;}
+.ex-num.adv{background:#F39C12;}
+.ex-q{font-size:15px;line-height:1.8;color:#333;}
+.ex-stars{color:#FFD700;font-size:13px;margin-left:4px;}
+.ans-block{display:none;margin-top:14px;padding:14px;background:#E8F8F0;border-radius:10px;border-left:4px solid #27AE60;}
+.ans-label{font-weight:700;color:#1E8449;margin-bottom:6px;font-size:14px;}
+.ans-text{color:#2C3E50;font-size:14px;margin-bottom:4px;}
+.analysis{color:#666;font-size:13px;line-height:1.7;}
+.btn-ans{display:block;width:100%;padding:13px;border:none;border-radius:12px;font-size:15px;font-weight:600;cursor:pointer;margin:15px 0 5px;transition:all .25s;letter-spacing:.5px;}
+.btn-ans.main{background:var(--subj-color);color:#fff;}
+.btn-ans.adv{background:#F39C12;color:#fff;}
+.btn-ans:hover{transform:translateY(-2px);box-shadow:0 6px 18px rgba(0,0,0,0.15);}
+.nav-row{display:flex;flex-wrap:wrap;gap:10px;padding:15px;}
+.nav-btn{display:inline-flex;align-items:center;gap:6px;padding:10px 18px;border-radius:25px;text-decoration:none;font-size:14px;font-weight:600;transition:all .25s;}
+.nav-btn.back{background:var(--subj-color);color:#fff;}
+.nav-btn.back:hover{opacity:.9;transform:translateY(-2px);}
+.tip-box{background:#FFF9E6;border:1px dashed #F9CA24;border-radius:12px;padding:14px;margin-bottom:16px;font-size:14px;color:#666;}
+</style>
+
+</head>
+<body>
+<div class="header">
+  <span class="icon">🔢</span>
+  <h1>第3单元 复式统计表</h1>
+  <div class="sub">三年级 · 数学 · 下册</div>
+</div>
+<div class="breadcrumb">
+  <a href="../../../main.html">🏠 首页</a><span>›</span>
+  <a href="../../index.html">三年级</a><span>›</span>
+  <a href="../index.html">数学</a><span>›</span>
+  <a href="index.html">下册</a><span>›</span>
+  第3单元 复式统计表
+</div>
+<div class="container">
+  <div class="section">
+    <div class="section-title">📚 本章知识点</div>
+    <div class="kp-grid"><div class="kp-card"><div class="num">知识点 1</div><p>认识复式统计表的结构（表头、行标题、列标题、数据）</p></div><div class="kp-card"><div class="num">知识点 2</div><p>能根据数据填写复式统计表</p></div><div class="kp-card"><div class="num">知识点 3</div><p>能从复式统计表中读取数据，回答相关问题</p></div><div class="kp-card"><div class="num">知识点 4</div><p>初步进行数据分析，发现规律和作出简单判断</p></div></div>
+  </div>
+  <div class="section">
+    <div class="section-title">⚡ 重点难点</div>
+    <ul class="diff-list"><li>正确理解复式统计表中行与列的交叉数据含义</li><li>汇总行（合计）的计算：行合计=该行所有数据之和</li><li>从统计表中提取信息并进行比较分析</li><li>统计结果的合理解释与判断</li></ul>
+  </div>
+  <div class="section">
+    <div class="section-title">✏️ 巩固练习（8题）</div>
+    <div class="tip-box">💡 先独立思考作答，再点击查看答案！</div>
+    <div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">1</span>
+  <div class="ex-q">某校三年级各班男女生人数：一班男21女20，二班男19女22，三班男23女18。填写复式统计表并计算各班总人数和男女生总人数</div>
+</div>
+<div class="ans-block" id="ex-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">一班41，二班41，三班41；男63，女60，总123</div>
+  <div class="analysis">📝 解析：各班总：21+20=41，19+22=41，23+18=41；男总：21+19+23=63；女总：20+22+18=60；全校：63+60=123</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">2</span>
+  <div class="ex-q">根据统计表，哪个班男生最多？哪个班女生最多？哪个班总人数最多？</div>
+</div>
+<div class="ans-block" id="ex-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">三班男生最多(23)；二班女生最多(22)；三个班总人数相同都是41</div>
+  <div class="analysis">📝 解析：直接从表中读取并比较</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">3</span>
+  <div class="ex-q">某超市一周销售水果统计（单位：千克）：苹果：周一50，周二60，周三45，周四55，周五70；香蕉：周一30，周二35，周三40，周四25，周五45。哪天销售水果最多？苹果和香蕉哪种销售更好？</div>
+</div>
+<div class="ans-block" id="ex-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">周五最多（70+45=115）；苹果（50+60+45+55+70=280kg）比香蕉（30+35+40+25+45=175kg）销售更好</div>
+  <div class="analysis">📝 解析：各天合计：一80，二95，三85，四80，五115；苹果总280＞香蕉总175</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">4</span>
+  <div class="ex-q">下面是一次考试成绩统计（优秀/良好/及格/不及格）：男生优秀12良好15及格8不及格0；女生优秀10良好18及格5不及格0。全班优秀多少人？良好多少人？</div>
+</div>
+<div class="ans-block" id="ex-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">优秀22人；良好33人</div>
+  <div class="analysis">📝 解析：优秀：12+10=22；良好：15+18=33</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">5</span>
+  <div class="ex-q">从题3的水果统计中，你能发现什么规律或特点？（开放题）</div>
+</div>
+<div class="ans-block" id="ex-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">如：每天苹果销量都大于香蕉；周五销量最高（可能是周末购买增多）等</div>
+  <div class="analysis">📝 解析：开放性问题，言之有理即可</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">6</span>
+  <div class="ex-q">某校图书馆藏书统计：科技类上学期320本，下学期增加45本；文学类上学期280本，下学期增加60本；其他上学期150本，下学期增加20本。下学期各类分别多少本？总共多少本？</div>
+</div>
+<div class="ans-block" id="ex-6">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">科技365本，文学340本，其他170本；总875本</div>
+  <div class="analysis">📝 解析：科技：320+45=365；文学：280+60=340；其他：150+20=170；总：365+340+170=875</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">7</span>
+  <div class="ex-q">请你设计一个统计表，调查班级同学最喜欢的季节（春夏秋冬），设计表格结构</div>
+</div>
+<div class="ans-block" id="ex-7">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">表头：季节/人数；列：春、夏、秋、冬、合计；行：男生、女生、合计</div>
+  <div class="analysis">📝 解析：复式统计表设计：行表示性别，列表示季节，这样可以同时统计不同性别对各季节的偏好</div>
+</div>
+</div><div class="ex-item">
+<div class="ex-header">
+  <span class="ex-num">8</span>
+  <div class="ex-q">某班上学期和下学期各科平均成绩：数学上85下88，语文上82下84，英语上78下83。哪科进步最大？</div>
+</div>
+<div class="ans-block" id="ex-8">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">英语进步最大（增加5分）</div>
+  <div class="analysis">📝 解析：数学进步3分，语文进步2分，英语进步5分，英语进步最大</div>
+</div>
+</div>
+    <button class="btn-ans main" data-prefix="ex-" onclick="toggleAns('ex-')">📖 查看答案与解析</button>
+  </div>
+  <div class="section">
+    <div class="section-title">🚀 拔高训练（5题）</div>
+    <div class="tip-box">💡 这些题有一定难度，挑战一下自己吧！完成后再查看答案。</div>
+    <div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">1</span>
+  <div class="ex-q">根据统计表分析：三年级三个班在运动会上获奖情况（金银铜牌）：一班金3银4铜2；二班金2银5铜3；三班金4银3铜1。按总分（金=3分，银=2分，铜=1分）排名，哪班第一？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-1">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">三班第一（4×3+3×2+1×1=12+6+1=19分）</div>
+  <div class="analysis">📝 解析：一班：3×3+4×2+2×1=9+8+2=19分；二班：2×3+5×2+3×1=6+10+3=19分；三班：4×3+3×2+1×1=19分，三班并列第一</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">2</span>
+  <div class="ex-q">调查某班20名同学的身高，分组统计：120-130cm有5人，130-140cm有8人，140-150cm有6人，150cm以上有1人。如何用复式统计表表示男女生各组人数？（假设男生11人，女生9人，自行分配合理数据）<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-2">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">开放题：合理分配即可，如120-130男2女3，130-140男5女3，140-150男4女2，150+男0女1，验证：男11女9</div>
+  <div class="analysis">📝 解析：总人数要符合：男11=各组男生之和，女9=各组女生之和</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">3</span>
+  <div class="ex-q">小明记录了一个月（30天）的天气：晴天18天，阴天7天，雨天5天，其中上半月（15天）：晴10天，阴3天，雨2天。下半月各种天气各几天？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-3">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">下半月：晴8天，阴4天，雨3天</div>
+  <div class="analysis">📝 解析：下半月晴=18-10=8天；阴=7-3=4天；雨=5-2=3天；验证：8+4+3=15天✓</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">4</span>
+  <div class="ex-q">根据统计表中数据推理：某商店连续4个月的月销售额为：1月38万，2月42万，3月36万，4月44万。预测5月份大约销售多少万元？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-4">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">约40万元（四个月平均约40万）</div>
+  <div class="analysis">📝 解析：(38+42+36+44)÷4=160÷4=40万；若有增长趋势可估高一些</div>
+</div>
+</div><div class="ex-item adv">
+<div class="ex-header">
+  <span class="ex-num adv">5</span>
+  <div class="ex-q">【综合题】一次数学竞赛，满分100分，成绩如下：三年级参赛20人，平均82分；四年级参赛25人，平均86分。两个年级合起来的平均分是多少？<span class="ex-stars"> ⭐⭐⭐</span></div>
+</div>
+<div class="ans-block" id="adv-5">
+  <div class="ans-label">✅ 答案</div>
+  <div class="ans-text">84.2分</div>
+  <div class="analysis">📝 解析：三年级总分：82×20=1640；四年级总分：86×25=2150；总人数：45；总分：3790；平均：3790÷45≈84.2分</div>
+</div>
+</div>
+    <button class="btn-ans adv" data-prefix="adv-" onclick="toggleAns('adv-')">📖 查看答案与解析</button>
+  </div>
+</div>
+
+<script>
+function toggleAns(prefix){
+  var els=document.querySelectorAll('[id^="'+prefix+'"]');
+  if(!els.length)return;
+  var show=els[0].style.display!=='block';
+  els.forEach(function(e){e.style.display=show?'block':'none';});
+  var btn=document.querySelector('[data-prefix="'+prefix+'"]');
+  if(btn)btn.textContent=show?'🙈 隐藏答案与解析':'📖 查看答案与解析';
+}
+</script>
+
+</body>
+</html>
